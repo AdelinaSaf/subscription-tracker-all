@@ -1,0 +1,94 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}О проекте - Subscription Tracker{% endblock %}
+
+{% block body %}
+<div class="container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-primary text-white">
+                    <h1 class="h2 mb-0">
+                        <i class="fas fa-info-circle me-2"></i>О проекте Subscription Tracker
+                    </h1>
+                </div>
+                <div class="card-body">
+                    <div class="row mb-5">
+                        <div class="col-md-8">
+                            <h2 class="h4 text-primary mb-3">Что такое Subscription Tracker?</h2>
+                            <p class="lead">
+                                <strong>Subscription Tracker</strong> — это современное веб-приложение для управления подписками и отслеживания регулярных платежей. 
+                                Наше приложение помогает контролировать все ваши подписки в одном месте.
+                            </p>
+                            <p>
+                                В эпоху цифровых услуг каждый из нас имеет множество подписок — от стриминговых сервисов 
+                                до облачных хранилищ и программного обеспечения. Управлять ими вручную становится сложно.
+                            </p>
+                            <p>
+                                <strong>Subscription Tracker решает эту проблему</strong>, предоставляя удобный инструмент 
+                                для мониторинга и управления всеми вашими подписками.
+                            </p>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <div class="bg-light rounded-circle p-5 d-inline-block">
+                                <i class="fas fa-calendar-check fa-5x text-primary"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                
+
+
+                </div>
+                <div class="card-footer bg-light text-center">
+                    <div class="row">
+                        <div class="col-md-6 text-md-start mb-3 mb-md-0">
+                            <small class="text-muted">© {{ "now"|date("Y") }} Subscription Tracker. Все права защищены.</small>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <a href="#" class="text-decoration-none me-3">
+                                <i class="fab fa-github me-1"></i>GitHub
+                            </a>
+                            <a href="#" class="text-decoration-none me-3">
+                                <i class="fab fa-twitter me-1"></i>Twitter
+                            </a>
+                            <a href="#" class="text-decoration-none">
+                                <i class="fas fa-envelope me-1"></i>Поддержка
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .card {
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .card-header {
+        border-radius: 15px 15px 0 0 !important;
+    }
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        margin: 0 auto 15px;
+    }
+    .tech-logo {
+        transition: transform 0.3s ease;
+    }
+    .tech-logo:hover {
+        transform: scale(1.1);
+    }
+    .stat-number {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 700;
+    }
+</style>
+{% endblock %}
