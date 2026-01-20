@@ -59,7 +59,7 @@ LexikJWTAuthenticationBundle
 
 Symfony Security
 
-MySQL / PostgreSQL
+PostgreSQL
 
 ### Frontend
 
